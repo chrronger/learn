@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CEB36B1E9CCE64007095E9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEB36A1E9CCE64007095E9 /* TestViewController.swift */; };
 		A68630591DFA862000B2E446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68630581DFA862000B2E446 /* AppDelegate.swift */; };
 		A686305B1DFA862000B2E446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686305A1DFA862000B2E446 /* ViewController.swift */; };
 		A686305E1DFA862000B2E446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A686305C1DFA862000B2E446 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CEB36A1E9CCE64007095E9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A68630551DFA862000B2E446 /* swift learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift learn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68630581DFA862000B2E446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A686305A1DFA862000B2E446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				A68630581DFA862000B2E446 /* AppDelegate.swift */,
 				A686305A1DFA862000B2E446 /* ViewController.swift */,
+				00CEB36A1E9CCE64007095E9 /* TestViewController.swift */,
 				A686305C1DFA862000B2E446 /* Main.storyboard */,
 				A686305F1DFA862000B2E446 /* Assets.xcassets */,
 				A68630611DFA862000B2E446 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A686305B1DFA862000B2E446 /* ViewController.swift in Sources */,
+				00CEB36B1E9CCE64007095E9 /* TestViewController.swift in Sources */,
 				A68630591DFA862000B2E446 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				A686307F1DFA862000B2E446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A68630801DFA862000B2E446 /* Build configuration list for PBXNativeTarget "swift learnTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				A68630821DFA862000B2E446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A68630831DFA862000B2E446 /* Build configuration list for PBXNativeTarget "swift learnUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				A68630851DFA862000B2E446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

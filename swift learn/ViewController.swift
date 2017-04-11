@@ -18,6 +18,7 @@ enum SeverResponse{
     case Failure(String)
 }
 
+
 //使用 enum 来创建一个枚举。就像类和其他所有命名类型一样，枚举可以包含方法 , 使用 rawValue 属性来访问一个枚举成员的原始值
 //hashValue 实际值 。从0加1赋值
 enum Rank:Int {
@@ -102,6 +103,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("ttt")
+        
        //有多种方式可以用来进行错误处理。一种方式是使用 do-catch 。在 do 代码块中，使用 try 来标记可以抛出错误 的代码。在 catch 代码块中，除非你另外命名，否则错误会自动命名为 error
         do {
             let printerResponse = try send(job: 1040, toPrinter: "bi sheng")//never has toner 抛出错误
@@ -146,6 +149,7 @@ class ViewController: UIViewController {
             for _ in 0..<numOfTimes{
                 result.append(item)
             }
+            
             return result
         }
         print(reptatItem(repeating: "knock", numOfTimes: 4))
@@ -156,8 +160,8 @@ class ViewController: UIViewController {
         let label = "the width is"
         let width = 22
         let widthLabel = label + "\(width)"
-        //let widthLabel = label +String(width)
-        print(widthLabel)
+        let widthl = label + String(width)
+        print(widthLabel,widthl)
         
         //数组
         var shoppingList = ["hotdog","water","food"]
@@ -232,8 +236,6 @@ class ViewController: UIViewController {
         
     
     
-    
-    
     }
     
 
@@ -256,6 +258,7 @@ class ViewController: UIViewController {
                 score += 1
             }
         }
+        
         print(score)
         
         //?可选值处理
