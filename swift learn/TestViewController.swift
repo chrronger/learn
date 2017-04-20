@@ -81,13 +81,18 @@ class TestViewController: UIViewController {
         }
         
         
+        let ges = UITapGestureRecognizer(target: self, action: #selector(gesTure))
+        vi.isUserInteractionEnabled = true
+        vi.addGestureRecognizer(ges)
         view.addSubview(vi)
         
         
         
     }
     
-    
+    func gesTure(){
+        
+    }
     
 }
 
