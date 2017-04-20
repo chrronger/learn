@@ -8,6 +8,14 @@
 
 import UIKit
 
+final class Box<T> {
+    let value: T
+    
+    init(_ value: T) {
+        self.value = value
+    }
+}
+
 //做一件事，为什么要这样做
 //写句代码为什么这么写，这么写的作用？
 //学无止境    `勤思考`
