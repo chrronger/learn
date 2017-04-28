@@ -8,12 +8,31 @@
 
 import UIKit
 
-internal func Init<T> (_ type:T,block:(_ t:T) ->Void) ->T{
+//
+internal func Init<T> (_ type:T,block:(_ t:T) ->Swift.Void) ->T{
     block(type)
     return type
 }
 
 
+
+//open class func completionBlock() -> (() -> Swift.Void)?
+//
+//open class func setCompletionBlock(_ block: (() -> Swift.Void)?)
+
+//T 遵守Hashable协议
+func iterateEnum<T: Hashable>(from: T.Type) -> AnyIterator<T> {
+    var x = 0
+    return AnyIterator {
+        let next = withUnsafePointer(to: &x) {
+            $0.withMemoryRebound(to: T.self, capacity: 1) { $0.pointee }
+        }
+        defer {
+            x += 1
+        }
+        return next.hashValue == x ? next : nil
+    }
+}
 
 
 
@@ -43,12 +62,16 @@ struct Stack<T> {
 
 
 
-class TestViewController: UIViewController {
+class TestViewController: UIViewController,testprotocol {
+    
+    var fff: CGFloat = .nan
+    var butt: UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        vt()
+        
         //usage
         var stackStr = Stack<Any>()
         stackStr.push(item: "i")
@@ -76,7 +99,7 @@ class TestViewController: UIViewController {
         
         
         let vi = Init(UIView()) {
-            $0.backgroundColor = UIColor.red
+            $0.backgroundColor = #colorLiteral(red: 0.7603954635, green: 0.3086948579, blue: 0.8078431487, alpha: 1)
             $0.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         }
         
@@ -128,8 +151,6 @@ public final class GRRong<Base> {
 extension GRRong where Base:UIView {
     
 }
-
-
 
 
 

@@ -112,7 +112,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //
-        view.backgroundColor = #colorLiteral(red: 0.7603954635, green: 0.3086948579, blue: 0.8078431487, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         println("ttt")
         
