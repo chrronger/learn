@@ -9,7 +9,7 @@
 import UIKit
 
 //
-internal func Init<T> (_ type:T,block:(_ t:T) ->Swift.Void) ->T{
+internal func Init<T> (_ type:T,block:(_ t:T) ->Void) ->T{
     block(type)
     return type
 }
@@ -91,6 +91,14 @@ class TestViewController: UIViewController,testprotocol {
             
         }
         
+        let info = Info()
+        
+        var ar = [Info]()
+        info.age = 10
+        
+        ar.append(info)
+        
+        
         //闭包
         let arr = [20, 28, 11, 2, 9]
         let newArr = arr.sorted(by: >)
@@ -101,6 +109,7 @@ class TestViewController: UIViewController,testprotocol {
         let vi = Init(UIView()) {
             $0.backgroundColor = #colorLiteral(red: 0.7603954635, green: 0.3086948579, blue: 0.8078431487, alpha: 1)
             $0.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            $0.layer.borderColor = #colorLiteral(red: 0.7603954635, green: 0.3086948579, blue: 0.8078431487, alpha: 1).cgColor
         }
         
         
@@ -109,7 +118,7 @@ class TestViewController: UIViewController,testprotocol {
         vi.addGestureRecognizer(ges)
         view.addSubview(vi)
         
-        
+       
         
     }
     
@@ -132,11 +141,25 @@ protocol TT {
 }
 
 ///log
-func println(_ item: @autoclosure () -> Any) {
+//func printIn(_ item: @autoclosure () -> Any) {
+//    #if DEBUG
+//        Swift.print(item())
+//    #endif
+//}
+//log
+func printLog<T>(_ message: T,
+              file: String = #file,
+              method: String = #function,
+              line: Int = #line)
+{
     #if DEBUG
-        Swift.print(item())
+        print("\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
     #endif
 }
+
+
+
+
 
 
 public final class GRRong<Base> {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003E5AA11EB8846F00FDEF5F /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E5AA01EB8846F00FDEF5F /* Info.swift */; };
+		003E5AA31EB889F900FDEF5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E5AA21EB889F900FDEF5F /* User.swift */; };
+		003E5AA51EB97A1B00FDEF5F /* CAEmitterLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E5AA41EB97A1B00FDEF5F /* CAEmitterLayerViewController.swift */; };
+		003E5AA71EB9B2D500FDEF5F /* SubclassLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E5AA61EB9B2D500FDEF5F /* SubclassLabel.swift */; };
 		004ADE561EB31B3C00008AA2 /* testprotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004ADE551EB31B3C00008AA2 /* testprotocol.swift */; };
 		00CEB36B1E9CCE64007095E9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEB36A1E9CCE64007095E9 /* TestViewController.swift */; };
 		A68630591DFA862000B2E446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68630581DFA862000B2E446 /* AppDelegate.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003E5AA01EB8846F00FDEF5F /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		003E5AA21EB889F900FDEF5F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		003E5AA41EB97A1B00FDEF5F /* CAEmitterLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmitterLayerViewController.swift; sourceTree = "<group>"; };
+		003E5AA61EB9B2D500FDEF5F /* SubclassLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubclassLabel.swift; sourceTree = "<group>"; };
 		004ADE551EB31B3C00008AA2 /* testprotocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testprotocol.swift; sourceTree = "<group>"; };
 		00CEB36A1E9CCE64007095E9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A68630551DFA862000B2E446 /* swift learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift learn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +112,11 @@
 				A68630581DFA862000B2E446 /* AppDelegate.swift */,
 				A686305A1DFA862000B2E446 /* ViewController.swift */,
 				00CEB36A1E9CCE64007095E9 /* TestViewController.swift */,
+				003E5AA41EB97A1B00FDEF5F /* CAEmitterLayerViewController.swift */,
 				004ADE551EB31B3C00008AA2 /* testprotocol.swift */,
+				003E5AA01EB8846F00FDEF5F /* Info.swift */,
+				003E5AA21EB889F900FDEF5F /* User.swift */,
+				003E5AA61EB9B2D500FDEF5F /* SubclassLabel.swift */,
 				A686305C1DFA862000B2E446 /* Main.storyboard */,
 				A686305F1DFA862000B2E446 /* Assets.xcassets */,
 				A68630611DFA862000B2E446 /* LaunchScreen.storyboard */,
@@ -194,7 +206,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "ower[]";
 				TargetAttributes = {
 					A68630541DFA862000B2E446 = {
@@ -270,7 +282,11 @@
 			files = (
 				A686305B1DFA862000B2E446 /* ViewController.swift in Sources */,
 				00CEB36B1E9CCE64007095E9 /* TestViewController.swift in Sources */,
+				003E5AA31EB889F900FDEF5F /* User.swift in Sources */,
 				A68630591DFA862000B2E446 /* AppDelegate.swift in Sources */,
+				003E5AA11EB8846F00FDEF5F /* Info.swift in Sources */,
+				003E5AA51EB97A1B00FDEF5F /* CAEmitterLayerViewController.swift in Sources */,
+				003E5AA71EB9B2D500FDEF5F /* SubclassLabel.swift in Sources */,
 				004ADE561EB31B3C00008AA2 /* testprotocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -394,6 +411,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

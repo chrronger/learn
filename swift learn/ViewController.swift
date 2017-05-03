@@ -114,7 +114,7 @@ class ViewController: UIViewController {
         //
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-        println("ttt")
+        printLog("ttt")
         
        //有多种方式可以用来进行错误处理。一种方式是使用 do-catch 。在 do 代码块中，使用 try 来标记可以抛出错误 的代码。在 catch 代码块中，除非你另外命名，否则错误会自动命名为 error
         do {
